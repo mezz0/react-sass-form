@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Gotham";
+  src: url('./assets/Fonts/Gotham Pro Regular.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: "Gotham";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Gotham",
+    monospace;
+}

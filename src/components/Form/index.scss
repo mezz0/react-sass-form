@@ -1,0 +1,98 @@
+$white: #ffffff;
+$grey: #747474;
+$cream: #ebebeb;
+$bradius: 5px;
+
+#wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: $white;
+  border: 1px solid $cream;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 0px 6px -5px;
+}
+
+#logocontainer {
+  display: flex;
+  align-items: flex-start;
+  max-width: 130px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  span {
+    font-size: 10px;
+    line-height: 1;
+  }
+}
+
+#title {
+  font-size: 1.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+#subline {
+  padding: 0;
+  margin: 10px 0px 40px 0px;
+  color: $grey;
+}
+
+form {
+  label {
+    color: $grey;
+    margin: 0;
+    line-height: 2;
+    font-size: 0.8rem;
+  }
+  
+  input {
+    margin: 0;
+  
+    &[type=email] {
+      margin-bottom: 20px;
+      padding: 10px;
+      display: inline-block;
+      border: 1px solid $cream;
+      border-radius: $bradius;
+      box-sizing: border-box;
+    }
+  
+    &[type=checkbox] {
+      margin-right: 5px;
+      border: 1px solid $cream;
+    }
+  }
+  
+  #email {
+    width: 100%;
+  }
+  
+  .submit {
+    background-color: white;
+    border: 1px solid $cream;
+    border-radius: $bradius;
+    color: $grey;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9rem;
+    margin: 10px 0;
+    transition: all .1s ease;
+    cursor: pointer;
+  
+    &:hover {
+      color: white;
+      background-color: #4CAF50;
+    }
+  }
+  
+  #rememberme {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+
