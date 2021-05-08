@@ -24,19 +24,6 @@ const NavBar: React.FC<WithPRops> = () => {
     e.preventDefault();
     setLoading(true);
     
-    // fetch('../api/sign-in', 
-    //   {
-    //     body: JSON.stringify({
-    //       emailAddress: e.target.email.value,
-    //     }),
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     method: 'POST'
-    //   }
-    // ).then(
-    //   (res: any) => console.log(res)
-    // )
     setTimeout(() => {
       setLoading(false);
     }, 2000)
@@ -52,7 +39,7 @@ const NavBar: React.FC<WithPRops> = () => {
       <p id='subline'>Please enter your email below</p>
       <StyledForm onSubmit={handleSubmit}>
         <label htmlFor='email'>Email Address</label>
-        <input id='email' type='email' required defaultValue='mehul1226@hotmail.com'></input>
+        <input id='email' type='email' required></input>
         <div id='rememberme'>
           <input id='checkbox' type='checkbox' />
           <label htmlFor='checkbox'>Remember this device</label>
