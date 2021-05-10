@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Logo from '../../assets/Form/Logo.svg'
 
-import './index.scss'
+import './form.scss'
 
 const Wrapper = styled.div`
 `;
@@ -13,11 +13,11 @@ const StyledForm = styled.form`
   align-items: flex-start;
 `
 
-interface WithPRops {
+interface WithProps {
   
 }
 
-const NavBar: React.FC<WithPRops> = () => {
+const NavBar: React.FC<WithProps> = () => {
   const [ loading, setLoading ] = useState<Boolean>(false);
 
   const handleSubmit = async (e: any) => {

@@ -1,8 +1,8 @@
-import userReducer from "./cartReducer";
+import signInFormReducer from "./signInFormReducer";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-  user: userReducer,
+  signInForm: signInFormReducer,
 });
 
 export default rootReducer;

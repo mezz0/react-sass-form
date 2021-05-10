@@ -2,11 +2,9 @@ import React from "react";
 import { Switch } from "react-router";
 import { Route, withRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-
 import Home from "./pages/Home/Home";
-
-import "./App.css";
 import styled from "styled-components";
+import "./App.scss";
 
 const AppWrapper = styled.div`
   width: 100%; height: 100vh;
