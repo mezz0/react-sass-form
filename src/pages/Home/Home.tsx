@@ -8,6 +8,11 @@ import './index.scss';
 const Container = styled.div`
   height: 100vh;
   display: flex;
+
+  @media (max-width: 500px) {
+    align-items: flex-start;
+    justify-content: center;
+  }
 `;
 
 interface WithProps {
